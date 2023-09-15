@@ -7782,7 +7782,7 @@ module.exports = (function(e, a) {
             var a =
               1 < arguments.length && void 0 !== arguments[1]
                 ? arguments[1]
-                : "https://wakatime.com/api/v1/";
+                : "https://wakapi.wanxuping.com/api/v1/";
             n(this, t),
               (this.apiKey = e),
               (this.axiosConfiguration = s.default.create({
@@ -10001,7 +10001,8 @@ module.exports = (function(e, a) {
               e = JSON.stringify(e);
             } else if (
               (W.isArray(e) && isFlatArray(e)) ||
-              W.isFileList(e) || (W.endsWith(p, "[]") && (n = W.toArray(e)))
+              W.isFileList(e) ||
+              (W.endsWith(p, "[]") && (n = W.toArray(e)))
             ) {
               p = removeBrackets(p);
               n.forEach(function each(e, i) {
