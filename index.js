@@ -8,7 +8,10 @@ const {
   WAKATIME_API_KEY: wakatimeApiKey
 } = process.env;
 
-const wakatime = new WakaTimeClient(wakatimeApiKey);
+const wakatime = new WakaTimeClient(
+  wakatimeApiKey,
+  "https://wakapi.wanxuping.com/api/v1"
+);
 
 const octokit = new Octokit({ auth: `token ${githubToken}` });
 
